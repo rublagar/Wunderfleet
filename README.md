@@ -28,11 +28,12 @@ Rent a car using Wunderfleet:
 - Car detail View.
 - Car Quick Rent.
 
-### **User Manual**
+### **User Manual / Installation**
 
 - Clone or download the project.
 - Pod install dependecies with CocoaPods.
-- Run 'Wunderfleet.xcworkspace' in Wunderfleet App folder.
+- Run `Wunderfleet.xcworkspace` in Wunderfleet App folder.
+
 
 ### **Screenshots**
 
@@ -54,7 +55,7 @@ Rent a car using Wunderfleet:
 - Improve MapView annotation Callout and View.
 - Handle detailed API error messages.
 - UI Tests.
-- Remove all warning.
+- Remove all warnings.
 - Fastlane for automations like app distribution or screenshots.
 - Analytics.
 - Real time crash reporting tool.
