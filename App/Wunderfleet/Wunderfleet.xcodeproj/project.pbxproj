@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		96CE25EB269ABBDA00F9CF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */; };
-		96CE25ED269ABBDA00F9CF9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE25EC269ABBDA00F9CF9F /* SceneDelegate.swift */; };
 		96CE25EF269ABBDA00F9CF9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE25EE269ABBDA00F9CF9F /* ViewController.swift */; };
 		96CE25F2269ABBDA00F9CF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F0269ABBDA00F9CF9F /* Main.storyboard */; };
 		96CE25F4269ABBDB00F9CF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		96CE25E7269ABBDA00F9CF9F /* Wunderfleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wunderfleet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96CE25EC269ABBDA00F9CF9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		96CE25EE269ABBDA00F9CF9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96CE25F1269ABBDA00F9CF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */,
-				96CE25EC269ABBDA00F9CF9F /* SceneDelegate.swift */,
 				96CE25EE269ABBDA00F9CF9F /* ViewController.swift */,
 				96CE25F0269ABBDA00F9CF9F /* Main.storyboard */,
 				96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */,
@@ -260,7 +257,6 @@
 			files = (
 				96CE25EF269ABBDA00F9CF9F /* ViewController.swift in Sources */,
 				96CE25EB269ABBDA00F9CF9F /* AppDelegate.swift in Sources */,
-				96CE25ED269ABBDA00F9CF9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -442,7 +438,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wundermobility.Wunderfleet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wundermobility.wunderfleet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wundermobility.Wunderfleet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wundermobility.wunderfleet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
