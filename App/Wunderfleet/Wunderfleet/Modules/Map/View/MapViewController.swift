@@ -113,6 +113,9 @@ extension MapViewController: MKMapViewDelegate {
     
     // Handle hide or show annotations feature
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard !(view.annotation is MKUserLocation) else {
+            return
+        }
         mapView.annotations.forEach { annotation in
             guard !(annotation is MKUserLocation) else {
                 return
