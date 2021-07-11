@@ -44,6 +44,10 @@ final class CarDetailViewModel: BaseViewModel {
         self.getCar(cardId: carId)
     }
     
+    func dismiss() {
+        self.dismissCarDetailView.accept(true)
+    }
+    
 }
 
 // MARK: Data Subscribers
@@ -54,26 +58,29 @@ extension CarDetailViewModel {
     private func subscribeData() {
         self.carData
             .subscribe(onNext: { [weak self] result in
-                guard let wself = self else { return }
                 switch result {
                 case .success(let response):
-                    wself.carsDetailResponse.onNext(response)
-                    wself.carAttributes.onNext(response.attributes)
-                default:
-                    break
+                    self?.carsDetailResponse.onNext(response)
+                    self?.carAttributes.onNext(response.attributes)
+                    self?.carsDetailResponse.onCompleted()
+                case .failure(let error):
+                    self?.carsDetailResponse.onError(error.callStatus)
+                    self?.carsDetailResponse.onCompleted()
                 }
+            }, onError: { [weak self] error in
+                self?.carsDetailResponse.onError(error)
+                self?.carsDetailResponse.onCompleted()
             })
             .disposed(by: self.disposeBag)
         
         // Subscribe main thread Rental data and accept response
         self.quickRentalData
             .subscribe(onNext: { [weak self] result in
-                guard let wself = self else { return }
                 switch result {
                 case .success(let response):
-                    wself.quickRentalResponse.onNext(response)
-                default:
-                    break
+                    self?.quickRentalResponse.onNext(response)
+                case .failure(let error):
+                    self?.quickRentalResponse.onError(error.callStatus)
                 }
             })
             .disposed(by: self.disposeBag)
@@ -90,14 +97,13 @@ extension CarDetailViewModel {
         self.apiService.car(carId: cardId)
             .observe(on: SerialDispatchQueueScheduler(qos: .default))
             .subscribe { [weak self] event in
-                guard let wself = self else { return }
                 switch event {
                 case .next(let result):
                     switch result {
                     case .success:
-                        wself._carData.on(event)
+                        self?._carData.on(event)
                     case .failure(let error):
-                        print(error)
+                        self?._carData.onError(error.callStatus)
                     }
                 default:
                     break
@@ -109,16 +115,14 @@ extension CarDetailViewModel {
     func quickRental() {
         // Subscribe Rent Car API call
         self.apiService.quickRental(carId: self.carId)
-            .observe(on: SerialDispatchQueueScheduler(qos: .default))
             .subscribe { [weak self] event in
-                guard let wself = self else { return }
                 switch event {
                 case .next(let result):
                     switch result {
                     case .success:
-                        wself._quickRentalData.on(event)
+                        self?._quickRentalData.on(event)
                     case .failure(let error):
-                        print(error)
+                        self?._quickRentalData.onError(error.callStatus)
                     }
                 default:
                     break

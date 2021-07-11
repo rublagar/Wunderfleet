@@ -54,9 +54,7 @@ class WunderfleetTests: XCTestCase {
     func testReservation() throws {
         let carDetailViewModel = CarDetailViewModel(apiService: MockAPI(), carId: 1)
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            carDetailViewModel.quickRental()
-        }
+        carDetailViewModel.quickRental()
         
         let reservation = try XCTUnwrap(carDetailViewModel.quickRentalResponse.toBlocking(timeout: 10).first())
         XCTAssertTrue(reservation.reserved)

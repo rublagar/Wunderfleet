@@ -14,6 +14,8 @@
 "CAR_DETAIL_ALERT_FAILED_MESSAGE" = "Your Reservation Failed, please try again";
 "CAR_DETAIL_ALERT_SUCCESS_TITLE" = "Reservation";
 "CAR_DETAIL_ALERT_SUCCESS_MESSAGE" = "Your reservation has been completed";
+"CAR_DATA_FAILED_TITLE" = "Car unavailable";
+"CAR_DATA_FAILED_MESSAGE" = "Empty API data";
 
 // MARK: Common UI
 "ALERT_ACCEPT" = "Thanks";

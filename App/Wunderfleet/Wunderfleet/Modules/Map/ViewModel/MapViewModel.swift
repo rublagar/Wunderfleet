@@ -47,9 +47,13 @@ extension MapViewModel {
                 switch result {
                 case .success(let cars):
                     wself.carsDetailResponse.onNext(cars)
+                    wself.carsDetailResponse.onCompleted()
                 default:
                     break
                 }
+            }, onError: { [weak self] error in
+                self?.carsDetailResponse.onError(error)
+                self?.carsDetailResponse.onCompleted()
             })
             .disposed(by: self.disposeBag)
     }
@@ -65,14 +69,13 @@ extension MapViewModel {
         self.apiService.cars()
             .observe(on: SerialDispatchQueueScheduler(qos: .default))
             .subscribe { [weak self] event in
-                guard let wself = self else { return }
                 switch event {
                 case .next(let result):
                     switch result {
                     case .success:
-                        wself._carsData.on(event)
+                        self?._carsData.on(event)
                     case .failure(let error):
-                        print(error)
+                        self?._carsData.onError(error.callStatus)
                     }
                 default:
                     break

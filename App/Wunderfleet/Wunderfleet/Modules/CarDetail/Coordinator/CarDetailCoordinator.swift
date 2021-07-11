@@ -12,10 +12,10 @@ import RxSwift
 final class CarDetailCoordinator: Coordinator {
     
     private let apiService: APIServiceProtocol
-    private let rootViewController: UIViewController
+    private let rootViewController: UINavigationController
     private let carId: Int
 
-    init(rootViewController: UIViewController, apiService: APIServiceProtocol, carId: Int) {
+    init(rootViewController: UINavigationController, apiService: APIServiceProtocol, carId: Int) {
         self.apiService = apiService
         self.rootViewController = rootViewController
         self.carId = carId
@@ -38,7 +38,7 @@ final class CarDetailCoordinator: Coordinator {
         })
         .disposed(by: self.disposeBag)
         
-        (rootViewController as? UINavigationController)?.pushViewController(viewController, animated: true)
+        rootViewController.pushViewController(viewController, animated: true)
     }
     
 }

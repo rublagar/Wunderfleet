@@ -28,11 +28,9 @@ final class MapCoordinator: Coordinator {
         let viewModel = MapViewModel(apiService: self.apiService)
         viewController.viewModel = viewModel
         
-        
         viewModel.showCarDetail
             .subscribe(onNext: { [weak self] car in
-                guard let wself = self else { return }
-                wself.showDetail(car: car, rootViewController: navigationController)
+                self?.showDetail(car: car, rootViewController: navigationController)
         })
         .disposed(by: self.disposeBag)
         
@@ -40,11 +38,8 @@ final class MapCoordinator: Coordinator {
         window.makeKeyAndVisible()
     }
     // Start the Car Detail coordinator
-    private func showDetail(car: Car, rootViewController: UIViewController) {
-        guard let carId = car.carId else {
-            return
-        }
-        let carDetailCoordinator = CarDetailCoordinator(rootViewController: rootViewController, apiService: self.apiService, carId: carId)
+    private func showDetail(car: Car, rootViewController: UINavigationController) {
+        let carDetailCoordinator = CarDetailCoordinator(rootViewController: rootViewController, apiService: self.apiService, carId: car.carId)
         self.addCoordinator(carDetailCoordinator)
         carDetailCoordinator.start()
     }

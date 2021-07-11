@@ -47,13 +47,15 @@ extension MapViewController {
         // Add cars annotations to map
         self.viewModel.carsDetailResponse
             .subscribe(onNext: { [weak self] cars in
-            guard let wself = self else { return }
-            wself.hideLoader()
             let carsAnnotations = cars.compactMap { car in
                 CarAnnotation(car)
             }
-            wself.mapView.addAnnotations(carsAnnotations)
-        })
+            self?.mapView.addAnnotations(carsAnnotations)
+            }, onError: { [weak self] _ in
+                self?.hideLoader()
+            }, onCompleted: {
+                self.hideLoader()
+            })
         .disposed(by: self.disposeBag)
     }
     

@@ -9,7 +9,7 @@ import Foundation
 
 struct Car: Codable {
     
-    var carId: Int?
+    var carId: Int
     var title: String?
     var isClean: Bool?
     var isDamaged: Bool?

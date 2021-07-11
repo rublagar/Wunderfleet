@@ -30,7 +30,7 @@ final class CarDetailViewController: BaseViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
-        self.viewModel.dismissCarDetailView.accept(true)
+        self.viewModel.dismiss()
     }
     
     // MARK: Setup UI
@@ -54,24 +54,30 @@ extension CarDetailViewController {
     // Add Car data to the UI
     private func subscribeViewModel() {
         self.viewModel.carsDetailResponse.subscribe(onNext: { [weak self] car in
-            guard let wself = self else { return }
-            wself.hideLoader()
-            wself.title = car.title
-            wself.carImageView.kf.setImage(with: car.imageURL)
+            self?.title = car.title
+            self?.carImageView.kf.setImage(with: car.imageURL)
+        }, onError: { [weak self] _ in
+            // Avoid show view with wrong API data
+            self?.navigationController?.popViewController(animated: true)
+            self?.showAlert(title: "CAR_DATA_FAILED_TITLE".localized,
+                            message: "CAR_DATA_FAILED_MESSAGE".localized)
+        }, onCompleted: {
+            self.hideLoader()
         })
         .disposed(by: self.disposeBag)
         
         // Handle Reservations
         self.viewModel.quickRentalResponse.subscribe(onNext: { [weak self] reservation in
-            guard let wself = self else { return }
-            wself.hideLoader()
+            self?.hideLoader()
             guard reservation.reserved else {
-                wself.showAlert(title: "CAR_DETAIL_ALERT_FAILED_TITLE".localized,
+                self?.showAlert(title: "CAR_DETAIL_ALERT_FAILED_TITLE".localized,
                                 message: "CAR_DETAIL_ALERT_FAILED_MESSAGE".localized)
                 return
             }
-            wself.showAlert(title: "CAR_DETAIL_ALERT_SUCCESS_TITLE".localized,
+            self?.showAlert(title: "CAR_DETAIL_ALERT_SUCCESS_TITLE".localized,
                             message: "CAR_DETAIL_ALERT_SUCCESS_MESSAGE".localized)
+        }, onError: { [weak self] _ in
+            self?.hideLoader()
         })
         .disposed(by: self.disposeBag)
         
