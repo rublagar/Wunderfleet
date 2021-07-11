@@ -54,6 +54,7 @@ Rent a car using Wunderfleet:
 - Improve MapView annotation Callout and View.
 - Handle detailed API error messages.
 - UI Tests.
+- Remove all warning.
 - Fastlane for automations like app distribution or screenshots.
 - Analytics.
 - Real time crash reporting tool.
