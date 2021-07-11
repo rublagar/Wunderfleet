@@ -38,6 +38,7 @@
 		96CE2653269AD5AA00F9CF9F /* CarAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2652269AD5AA00F9CF9F /* CarAnnotation.swift */; };
 		96CE2655269ADD0200F9CF9F /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2654269ADD0200F9CF9F /* String+Common.swift */; };
 		96CE2657269ADD7B00F9CF9F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96CE2656269ADD7B00F9CF9F /* Localizable.strings */; };
+		96CE2659269AE46900F9CF9F /* CarDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2658269AE46800F9CF9F /* CarDetailsCell.swift */; };
 		E1ECF5CB2E882D2DA15EE591 /* Pods_Wunderfleet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		96CE2652269AD5AA00F9CF9F /* CarAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAnnotation.swift; sourceTree = "<group>"; };
 		96CE2654269ADD0200F9CF9F /* String+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
 		96CE2656269ADD7B00F9CF9F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		96CE2658269AE46800F9CF9F /* CarDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsCell.swift; sourceTree = "<group>"; };
 		C75B90AAE58223B01EC76EA2 /* Pods-WunderfleetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetUITests.debug.xcconfig"; path = "Target Support Files/Pods-WunderfleetUITests/Pods-WunderfleetUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wunderfleet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WunderfleetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -324,6 +326,7 @@
 			children = (
 				96CE2638269AC23200F9CF9F /* CarDetailViewController.swift */,
 				96CE263A269AC25D00F9CF9F /* CarDetail.storyboard */,
+				96CE2658269AE46800F9CF9F /* CarDetailsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				96CE2641269AC29B00F9CF9F /* BaseViewController.swift in Sources */,
 				96CE2651269AD56400F9CF9F /* UIViewController+Common.swift in Sources */,
 				96CE2649269AC3FD00F9CF9F /* Router.swift in Sources */,
+				96CE2659269AE46900F9CF9F /* CarDetailsCell.swift in Sources */,
 				96CE262B269AC16600F9CF9F /* Coordinator.swift in Sources */,
 				96CE2631269AC1A600F9CF9F /* Reservation.swift in Sources */,
 				96CE2639269AC23200F9CF9F /* CarDetailViewController.swift in Sources */,

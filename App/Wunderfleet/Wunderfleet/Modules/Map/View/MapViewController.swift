@@ -74,11 +74,11 @@ extension MapViewController: MKMapViewDelegate {
     
     // Set focused region to test result
     private func setRegion() {
-        let coordinate = CLLocationCoordinate2D(latitude: Constants.latitude,
-                                                longitude: Constants.longitude)
+        let coordinate = CLLocationCoordinate2D(latitude: Constants.Latitude,
+                                                longitude: Constants.Longitude)
         let region = self.mapView.regionThatFits(MKCoordinateRegion(center: coordinate,
-                                                                    latitudinalMeters: Constants.latitudinalMeters,
-                                                                    longitudinalMeters: Constants.longitudinalMeters))
+                                                                    latitudinalMeters: Constants.LatitudinalMeters,
+                                                                    longitudinalMeters: Constants.LongitudinalMeters))
         self.mapView.setRegion(region, animated: true)
     }
     
@@ -92,7 +92,7 @@ extension MapViewController: MKMapViewDelegate {
         }
         
         // Customize and return cars annotations
-        let identifier = Constants.annotationId
+        let identifier = Constants.AnnotationId
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
         if annotationView == nil {
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)

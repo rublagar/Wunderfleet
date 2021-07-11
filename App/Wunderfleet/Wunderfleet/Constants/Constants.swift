@@ -19,12 +19,15 @@ struct Constants {
     static let CAR_PATH: String = "/cars/"
 
     // Map Constants
+    static let AnnotationId: String = "annotationId"
+    static let Latitude: Double = 51.515
+    static let Longitude: Double = 7.4651
+    static let LatitudinalMeters: Double = 1000
+    static let LongitudinalMeters: Double = 1000
     
-    static let annotationId: String = "annotationId"
-    static let latitude: Double = 51.515
-    static let longitude: Double = 7.4651
-    static let latitudinalMeters: Double = 1000
-    static let longitudinalMeters: Double = 1000
+    // Car Constants
+    static let CarTitle: String = "title"
+    static let CarImage: String = "vehicleTypeImageUrl"
     
 }
 
@@ -43,6 +46,7 @@ struct Assets {
 struct StoryBoards {
     
     static let Map: String = "Map"
+    static let CarDetail: String = "CarDetail"
 
 }
 

@@ -29,12 +29,23 @@ final class MapCoordinator: Coordinator {
         
         viewModel.showCarDetail
             .subscribe(onNext: { [weak self] car in
-                // TODO: Show car details
+                guard let wself = self else { return }
+                guard let car = car else { return }
+                wself.showDetail(car: car, rootViewController: navigationController)
         })
         .disposed(by: self.disposeBag)
         
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
+    }
+    // Start the Car Detail coordinator
+    private func showDetail(car: Car, rootViewController: UIViewController) {
+        guard let carId = car.carId else {
+            return
+        }
+        let carDetailCoordinator = CarDetailCoordinator(rootViewController: rootViewController, carId: carId)
+        self.addCoordinator(carDetailCoordinator)
+        carDetailCoordinator.start()
     }
     
 }

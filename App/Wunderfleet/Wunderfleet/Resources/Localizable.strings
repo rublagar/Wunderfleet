@@ -9,6 +9,16 @@
 // MARK: Map View
 "MAP_VIEW_TITLE" = "Wunderfleet";
 
+// MARK: Car Detail View
+"CAR_DETAIL_ALERT_FAILED_TITLE" = "Reservation Failed";
+"CAR_DETAIL_ALERT_FAILED_MESSAGE" = "Your Reservation Failed, please try again";
+"CAR_DETAIL_ALERT_SUCCESS_TITLE" = "Reservation";
+"CAR_DETAIL_ALERT_SUCCESS_MESSAGE" = "Your reservation has been completed";
+
+// MARK: Common UI
+"ALERT_ACCEPT" = "Thanks";
+"ALERT_CANCEL" = "Cancel";
+
 // MARK: Errors
 "GENERIC_ERROR" = "Generic Error";
 "SERIALIZATION_ERROR" = "Serialization Error";

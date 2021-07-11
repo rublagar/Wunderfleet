@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Pm-Fo-KDa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,20 +9,102 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="s0d-6b-0kx">
+        <!--Car Detail View Controller-->
+        <scene sceneID="KTH-h8-YYr">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                <viewController storyboardIdentifier="CarDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Pm-Fo-KDa" customClass="CarDetailViewController" customModule="Wunderfleet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dA4-hv-fK5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8MP-hf-Stt">
+                                <rect key="frame" x="0.0" y="54" width="414" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8MP-hf-Stt" secondAttribute="height" multiplier="2:1" id="Llc-pW-law"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iMr-dE-7VG">
+                                <rect key="frame" x="0.0" y="261" width="414" height="555"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CarDetailsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarDetailsCell" id="Cxr-Vs-QFQ" customClass="CarDetailsCell" customModule="Wunderfleet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="66.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cxr-Vs-QFQ" id="6C7-pq-6pO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ito-v4-bHP">
+                                                    <rect key="frame" x="10" y="10" width="394" height="46.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhi-Eb-TmY">
+                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="21"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPr-I2-avQ">
+                                                            <rect key="frame" x="0.0" y="26" width="394" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ito-v4-bHP" firstAttribute="leading" secondItem="6C7-pq-6pO" secondAttribute="leading" constant="10" id="aAq-lz-jk1"/>
+                                                <constraint firstItem="ito-v4-bHP" firstAttribute="top" secondItem="6C7-pq-6pO" secondAttribute="top" constant="10" id="gKD-Bh-tuT"/>
+                                                <constraint firstAttribute="trailing" secondItem="ito-v4-bHP" secondAttribute="trailing" constant="10" id="l2B-Qk-ZGz"/>
+                                                <constraint firstAttribute="bottom" secondItem="ito-v4-bHP" secondAttribute="bottom" constant="10" id="t67-ej-PcV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailLabel" destination="OPr-I2-avQ" id="wnv-3r-PCm"/>
+                                            <outlet property="titleLabel" destination="lhi-Eb-TmY" id="6iB-gm-CXh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiG-Fw-cZU">
+                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="NIc-FK-WHX"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                                <state key="normal" title="Quick Rent">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="quickRental:" destination="6Pm-Fo-KDa" eventType="touchUpInside" id="C1z-jU-M8o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cG8-Uj-6vV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cG8-Uj-6vV" firstAttribute="trailing" secondItem="jiG-Fw-cZU" secondAttribute="trailing" id="9mQ-ou-vDt"/>
+                            <constraint firstItem="jiG-Fw-cZU" firstAttribute="leading" secondItem="cG8-Uj-6vV" secondAttribute="leading" id="G0T-i1-LMy"/>
+                            <constraint firstItem="iMr-dE-7VG" firstAttribute="top" secondItem="8MP-hf-Stt" secondAttribute="bottom" id="J1S-la-zjd"/>
+                            <constraint firstItem="8MP-hf-Stt" firstAttribute="leading" secondItem="cG8-Uj-6vV" secondAttribute="leading" id="M4b-tl-COO"/>
+                            <constraint firstItem="iMr-dE-7VG" firstAttribute="bottom" secondItem="jiG-Fw-cZU" secondAttribute="top" id="P3k-HT-eP1"/>
+                            <constraint firstItem="8MP-hf-Stt" firstAttribute="top" secondItem="cG8-Uj-6vV" secondAttribute="top" constant="10" id="Qir-MH-7t4"/>
+                            <constraint firstItem="iMr-dE-7VG" firstAttribute="leading" secondItem="cG8-Uj-6vV" secondAttribute="leading" id="eM7-YK-NIj"/>
+                            <constraint firstItem="cG8-Uj-6vV" firstAttribute="trailing" secondItem="8MP-hf-Stt" secondAttribute="trailing" id="h2O-Lo-Cpv"/>
+                            <constraint firstItem="jiG-Fw-cZU" firstAttribute="bottom" secondItem="dA4-hv-fK5" secondAttribute="bottom" id="kY6-vP-b7L"/>
+                            <constraint firstItem="cG8-Uj-6vV" firstAttribute="trailing" secondItem="iMr-dE-7VG" secondAttribute="trailing" id="ygU-Hz-niH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carImageView" destination="8MP-hf-Stt" id="jyo-Y9-Gxc"/>
+                        <outlet property="quickRentalButton" destination="jiG-Fw-cZU" id="8Y8-qO-i1B"/>
+                        <outlet property="tableView" destination="iMr-dE-7VG" id="dqG-tK-CdH"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ig-oL-mb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="90"/>
+            <point key="canvasLocation" x="35" y="78"/>
         </scene>
     </scenes>
     <resources>

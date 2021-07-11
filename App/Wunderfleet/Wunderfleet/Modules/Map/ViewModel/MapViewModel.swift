@@ -38,7 +38,7 @@ extension MapViewModel {
     // Subscribe main thread Cars data and accept response
     private func subscribeData() {
         self.carsData
-            .subscribe(onNext: { [weak self] (result) in
+            .subscribe(onNext: { [weak self] result in
                 guard let wself = self else { return }
                 switch result {
                 case .success(let response):
@@ -60,7 +60,7 @@ extension MapViewModel {
     private func getCars() {
         API().cars()
             .observe(on: SerialDispatchQueueScheduler(qos: .default))
-            .subscribe { [weak self] (event) in
+            .subscribe { [weak self] event in
                 guard let wself = self else { return }
                 switch event {
                 case .next(let result):
