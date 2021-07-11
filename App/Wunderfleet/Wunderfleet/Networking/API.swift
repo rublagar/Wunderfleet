@@ -11,7 +11,15 @@ import RxSwift
 import RxAlamofire
 import Alamofire
 
-final class API {
+protocol APIServiceProtocol {
+    
+    func cars() -> Observable<Result<[Car]>>
+    func car(carId: Int) -> Observable<Result<Car>>
+    func quickRental(carId: Int) -> Observable<Result<Reservation>>
+    
+}
+
+final class API: APIServiceProtocol {
     
     static let shared: API = {
         let instance = API()

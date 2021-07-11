@@ -10,10 +10,12 @@ import Foundation
 import RxSwift
 
 final class MapCoordinator: Coordinator {
-
+    
+    private let apiService: APIServiceProtocol
     private let window: UIWindow
 
-    init(window: UIWindow) {
+    init(window: UIWindow, apiService: APIServiceProtocol) {
+        self.apiService = apiService
         self.window = window
     }
 
@@ -23,14 +25,13 @@ final class MapCoordinator: Coordinator {
         let viewController = MapViewController.initFromStoryboard(name: StoryBoards.Map)
         let navigationController = UINavigationController(rootViewController: viewController)
         
-        let viewModel = MapViewModel()
+        let viewModel = MapViewModel(apiService: self.apiService)
         viewController.viewModel = viewModel
         
         
         viewModel.showCarDetail
             .subscribe(onNext: { [weak self] car in
                 guard let wself = self else { return }
-                guard let car = car else { return }
                 wself.showDetail(car: car, rootViewController: navigationController)
         })
         .disposed(by: self.disposeBag)
@@ -43,7 +44,7 @@ final class MapCoordinator: Coordinator {
         guard let carId = car.carId else {
             return
         }
-        let carDetailCoordinator = CarDetailCoordinator(rootViewController: rootViewController, carId: carId)
+        let carDetailCoordinator = CarDetailCoordinator(rootViewController: rootViewController, apiService: self.apiService, carId: carId)
         self.addCoordinator(carDetailCoordinator)
         carDetailCoordinator.start()
     }

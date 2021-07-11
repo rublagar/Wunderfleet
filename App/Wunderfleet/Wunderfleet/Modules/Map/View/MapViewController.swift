@@ -48,7 +48,6 @@ extension MapViewController {
         self.viewModel.carsDetailResponse
             .subscribe(onNext: { [weak self] cars in
             guard let wself = self else { return }
-            guard let cars = cars else { return }
             wself.hideLoader()
             let carsAnnotations = cars.compactMap { car in
                 CarAnnotation(car)
@@ -134,7 +133,7 @@ extension MapViewController: MKMapViewDelegate {
     // Show car detail view
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if let car = view.annotation as? CarAnnotation {
-            self.viewModel.showCarDetail.accept(car.item)
+            self.viewModel.showCarDetail.onNext(car.item)
         }
     }
     

@@ -17,8 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let window = UIWindow()
         self.setupApp()
-        // Start app Coordinator
-        self.appCoordinator = AppCoordinator(window: window)
+        // Start app Coordinator and Mock Services
+        let apiService = API()
+        //let apiService = MockAPI()
+        self.appCoordinator = AppCoordinator(window: window, apiService: apiService)
         self.appCoordinator.start()
         
         return true

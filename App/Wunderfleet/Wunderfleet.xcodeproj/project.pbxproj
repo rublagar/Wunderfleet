@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		38CC66A57F5842FC07F02E15 /* libPods-WunderfleetUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA2BA215B5291BA6C1CEE58 /* libPods-WunderfleetUITests.a */; };
-		63B4554067BEBA3B80FC5FCB /* libPods-WunderfleetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */; };
 		96CE25EB269ABBDA00F9CF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */; };
 		96CE25F2269ABBDA00F9CF9F /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F0269ABBDA00F9CF9F /* Map.storyboard */; };
 		96CE25F4269ABBDB00F9CF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */; };
@@ -39,7 +38,9 @@
 		96CE2655269ADD0200F9CF9F /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2654269ADD0200F9CF9F /* String+Common.swift */; };
 		96CE2657269ADD7B00F9CF9F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96CE2656269ADD7B00F9CF9F /* Localizable.strings */; };
 		96CE2659269AE46900F9CF9F /* CarDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2658269AE46800F9CF9F /* CarDetailsCell.swift */; };
+		96CE265B269AF24600F9CF9F /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE265A269AF24600F9CF9F /* MockAPI.swift */; };
 		E1ECF5CB2E882D2DA15EE591 /* Pods_Wunderfleet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */; };
+		F6127422F4F1E46E5E16CEF2 /* Pods_WunderfleetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C94A2A60902DEE65E9D6296 /* Pods_WunderfleetTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		0CC45024E33783DDC8CF39FF /* Pods-WunderfleetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetTests.release.xcconfig"; path = "Target Support Files/Pods-WunderfleetTests/Pods-WunderfleetTests.release.xcconfig"; sourceTree = "<group>"; };
 		3CD150B525C7BC2DCAF17AF6 /* Pods-Wunderfleet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wunderfleet.release.xcconfig"; path = "Target Support Files/Pods-Wunderfleet/Pods-Wunderfleet.release.xcconfig"; sourceTree = "<group>"; };
 		3FC6B25CEB8527D15FF5DAB3 /* Pods-Wunderfleet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wunderfleet.debug.xcconfig"; path = "Target Support Files/Pods-Wunderfleet/Pods-Wunderfleet.debug.xcconfig"; sourceTree = "<group>"; };
+		4C94A2A60902DEE65E9D6296 /* Pods_WunderfleetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WunderfleetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7541B5DB4A17AFCD79A6B0AF /* Pods-WunderfleetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetUITests.release.xcconfig"; path = "Target Support Files/Pods-WunderfleetUITests/Pods-WunderfleetUITests.release.xcconfig"; sourceTree = "<group>"; };
 		96CE25E7269ABBDA00F9CF9F /* Wunderfleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wunderfleet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,9 +104,10 @@
 		96CE2654269ADD0200F9CF9F /* String+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
 		96CE2656269ADD7B00F9CF9F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		96CE2658269AE46800F9CF9F /* CarDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsCell.swift; sourceTree = "<group>"; };
+		96CE265A269AF24600F9CF9F /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		96CE265F269B238900F9CF9F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C75B90AAE58223B01EC76EA2 /* Pods-WunderfleetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetUITests.debug.xcconfig"; path = "Target Support Files/Pods-WunderfleetUITests/Pods-WunderfleetUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wunderfleet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WunderfleetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63B4554067BEBA3B80FC5FCB /* libPods-WunderfleetTests.a in Frameworks */,
+				F6127422F4F1E46E5E16CEF2 /* Pods_WunderfleetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +248,7 @@
 				96CE2648269AC3FD00F9CF9F /* Router.swift */,
 				96CE2646269AC3ED00F9CF9F /* Result.swift */,
 				96CE2644269AC3E200F9CF9F /* CallError.swift */,
+				96CE265A269AF24600F9CF9F /* MockAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -355,9 +359,10 @@
 		F68CE4ECD383370DE1B3E1B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96CE265F269B238900F9CF9F /* XCTest.framework */,
 				DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */,
-				FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */,
 				0AA2BA215B5291BA6C1CEE58 /* libPods-WunderfleetUITests.a */,
+				4C94A2A60902DEE65E9D6296 /* Pods_WunderfleetTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 				96CE25F9269ABBDC00F9CF9F /* Sources */,
 				96CE25FA269ABBDC00F9CF9F /* Frameworks */,
 				96CE25FB269ABBDC00F9CF9F /* Resources */,
+				A517DA53A1841CD6CDAC14C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -511,6 +517,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wunderfleet/Pods-Wunderfleet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A517DA53A1841CD6CDAC14C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WunderfleetTests/Pods-WunderfleetTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WunderfleetTests/Pods-WunderfleetTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WunderfleetTests/Pods-WunderfleetTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BB4A6FE0D6B1EED7A4EDA8D5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -588,6 +611,7 @@
 				96CE264F269AC48500F9CF9F /* Constants.swift in Sources */,
 				96CE263F269AC28B00F9CF9F /* BaseViewModel.swift in Sources */,
 				96CE2643269AC2B700F9CF9F /* CarDetailViewModel.swift in Sources */,
+				96CE265B269AF24600F9CF9F /* MockAPI.swift in Sources */,
 				96CE263D269AC26E00F9CF9F /* MapViewModel.swift in Sources */,
 				96CE2633269AC1C800F9CF9F /* CarDetailCoordinator.swift in Sources */,
 				96CE2635269AC1FE00F9CF9F /* MapCoordinator.swift in Sources */,

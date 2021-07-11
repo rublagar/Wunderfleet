@@ -12,6 +12,10 @@ import RxCocoa
 
 final class CarDetailViewModel: BaseViewModel {
     
+    // API
+    let apiService: APIServiceProtocol
+    let carId: Int
+    
     // Handle navigation
     let dismissCarDetailView : BehaviorRelay<Bool?> = BehaviorRelay<Bool?>(value: nil)
     
@@ -20,21 +24,24 @@ final class CarDetailViewModel: BaseViewModel {
         return _carData.asObservable().observe(on: MainScheduler.instance)
     }
     private let _carData = ReplaySubject<Result<Car>>.create(bufferSize: 1)
-    var carsDetailResponse: BehaviorRelay<Car?> = BehaviorRelay<Car?>(value: nil)
-    var carAttributes: BehaviorRelay<[CarAttribute]> = BehaviorRelay<[CarAttribute]>(value: [])
+    var carsDetailResponse: PublishSubject<Car> = PublishSubject<Car>()
+    var carAttributes: PublishSubject<[CarAttribute]> = PublishSubject<[CarAttribute]>()
     
     // Handle Rental
     var quickRentalData: Observable<Result<Reservation>> {
         return _quickRentalData.asObservable().observe(on: MainScheduler.instance)
     }
     private let _quickRentalData = ReplaySubject<Result<Reservation>>.create(bufferSize: 1)
-    var quickRentalResponse: BehaviorRelay<Reservation?> = BehaviorRelay<Reservation?>(value: nil)
+    var quickRentalResponse: PublishSubject<Reservation> = PublishSubject<Reservation>()
     
-    init(cardId: Int) {
+    init(apiService: APIServiceProtocol, carId: Int) {
+        self.apiService = apiService
+        self.carId = carId
+        
         super.init()
         
         self.subscribeData()
-        self.getCar(cardId: cardId)
+        self.getCar(cardId: carId)
     }
     
 }
@@ -50,8 +57,8 @@ extension CarDetailViewModel {
                 guard let wself = self else { return }
                 switch result {
                 case .success(let response):
-                    wself.carsDetailResponse.accept(response)
-                    wself.carAttributes.accept(response.attributes)
+                    wself.carsDetailResponse.onNext(response)
+                    wself.carAttributes.onNext(response.attributes)
                 default:
                     break
                 }
@@ -64,7 +71,7 @@ extension CarDetailViewModel {
                 guard let wself = self else { return }
                 switch result {
                 case .success(let response):
-                    wself.quickRentalResponse.accept(response)
+                    wself.quickRentalResponse.onNext(response)
                 default:
                     break
                 }
@@ -80,7 +87,7 @@ extension CarDetailViewModel {
     
     private func getCar(cardId: Int) {
         // Subscribe Car Detail API call
-        API().car(carId: cardId)
+        self.apiService.car(carId: cardId)
             .observe(on: SerialDispatchQueueScheduler(qos: .default))
             .subscribe { [weak self] event in
                 guard let wself = self else { return }
@@ -101,10 +108,7 @@ extension CarDetailViewModel {
     
     func quickRental() {
         // Subscribe Rent Car API call
-        guard let carId = self.carsDetailResponse.value?.carId else {
-            return
-        }
-        API().quickRental(carId: carId)
+        self.apiService.quickRental(carId: self.carId)
             .observe(on: SerialDispatchQueueScheduler(qos: .default))
             .subscribe { [weak self] event in
                 guard let wself = self else { return }

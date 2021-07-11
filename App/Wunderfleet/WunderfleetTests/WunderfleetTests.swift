@@ -8,26 +8,58 @@
 import XCTest
 @testable import Wunderfleet
 
+import RxSwift
+import RxTest
+import RxBlocking
+
 class WunderfleetTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    let disposeBag = DisposeBag()
+    
+    override func setUp() {
+        super.setUp()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        super.tearDown()
+    }
+    
+    // MARK: Map Tests
+    func testCars() throws {
+        let mapViewModel = MapViewModel(apiService: MockAPI())
+
+        let cars = try XCTUnwrap(mapViewModel.carsDetailResponse.toBlocking(timeout: 10).first())
+        XCTAssertGreaterThan(cars.count, 0)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    // MARK: Car Detail Tests
+    func testCarAttributes() throws {
+        let carDetailViewModel = CarDetailViewModel(apiService: MockAPI(),
+                                                    carId: 1)
+        let attributes = try XCTUnwrap(carDetailViewModel.carAttributes.toBlocking(timeout: 10).first())
+        XCTAssertGreaterThan(attributes.count, 0)
+    }
+    
+    func testExpectedCar() throws {
+        let carId: Int = 1
+        let carDetailViewModel = CarDetailViewModel(apiService: MockAPI(),
+                                                    carId: carId)
+        
+        let car = try XCTUnwrap(carDetailViewModel.carsDetailResponse.toBlocking(timeout: 10).first())
+        
+        XCTAssertEqual(carId, car.carId)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    // MARK: Reservation Test
+    func testReservation() throws {
+        let carDetailViewModel = CarDetailViewModel(apiService: MockAPI(), carId: 1)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            carDetailViewModel.quickRental()
         }
+        
+        let reservation = try XCTUnwrap(carDetailViewModel.quickRentalResponse.toBlocking(timeout: 10).first())
+        XCTAssertTrue(reservation.reserved)
     }
 
 }

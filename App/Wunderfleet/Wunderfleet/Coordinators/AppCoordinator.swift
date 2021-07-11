@@ -10,17 +10,19 @@ import Foundation
 import RxSwift
 
 final class AppCoordinator: Coordinator {
-
+    
+    private let apiService: APIServiceProtocol
     private let window: UIWindow
 
-    init(window: UIWindow) {
+    init(window: UIWindow, apiService: APIServiceProtocol) {
+        self.apiService = apiService
         self.window = window
     }
 
     // MARK: Start Coordinator
     
     override func start() {
-        let mapCoordinator = MapCoordinator(window: window)
+        let mapCoordinator = MapCoordinator(window: window, apiService: self.apiService)
         self.addCoordinator(mapCoordinator)
         mapCoordinator.start()
     }

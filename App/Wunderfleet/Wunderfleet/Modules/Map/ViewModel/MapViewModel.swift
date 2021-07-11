@@ -12,17 +12,21 @@ import RxCocoa
 
 final class MapViewModel: BaseViewModel {
     
+    // API
+    let apiService: APIServiceProtocol
+    
     // Handle navigation to CarDetail
-    let showCarDetail : BehaviorRelay<Car?> = BehaviorRelay<Car?>(value: nil)
+    let showCarDetail: PublishSubject<Car> = PublishSubject<Car>()
     
     // Handle Cars data
     var carsData: Observable<Result<[Car]>> {
         return _carsData.asObservable().observe(on: MainScheduler.instance)
     }
     private let _carsData = ReplaySubject<Result<[Car]>>.create(bufferSize: 1)
-    var carsDetailResponse: BehaviorRelay<[Car]?> = BehaviorRelay<[Car]?>(value: nil)
+    var carsDetailResponse: PublishSubject<[Car]> = PublishSubject<[Car]>()
     
-    override init() {
+    init(apiService: APIServiceProtocol) {
+        self.apiService = apiService
         super.init()
 
         self.subscribeData()
@@ -41,8 +45,8 @@ extension MapViewModel {
             .subscribe(onNext: { [weak self] result in
                 guard let wself = self else { return }
                 switch result {
-                case .success(let response):
-                    wself.carsDetailResponse.accept(response)
+                case .success(let cars):
+                    wself.carsDetailResponse.onNext(cars)
                 default:
                     break
                 }
@@ -58,7 +62,7 @@ extension MapViewModel {
     
     // Subscribe Cars API call
     private func getCars() {
-        API().cars()
+        self.apiService.cars()
             .observe(on: SerialDispatchQueueScheduler(qos: .default))
             .subscribe { [weak self] event in
                 guard let wself = self else { return }

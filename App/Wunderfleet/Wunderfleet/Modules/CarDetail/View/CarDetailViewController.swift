@@ -55,7 +55,6 @@ extension CarDetailViewController {
     private func subscribeViewModel() {
         self.viewModel.carsDetailResponse.subscribe(onNext: { [weak self] car in
             guard let wself = self else { return }
-            guard let car = car else { return }
             wself.hideLoader()
             wself.title = car.title
             wself.carImageView.kf.setImage(with: car.imageURL)
@@ -65,7 +64,6 @@ extension CarDetailViewController {
         // Handle Reservations
         self.viewModel.quickRentalResponse.subscribe(onNext: { [weak self] reservation in
             guard let wself = self else { return }
-            guard let reservation = reservation else { return }
             wself.hideLoader()
             guard reservation.reserved else {
                 wself.showAlert(title: "CAR_DETAIL_ALERT_FAILED_TITLE".localized,
@@ -78,12 +76,13 @@ extension CarDetailViewController {
         .disposed(by: self.disposeBag)
         
         // Bind Table with Car attributes
-        _ = self.viewModel.carAttributes
+        self.viewModel.carAttributes
             .asObservable()
             .bind(to: tableView.rx.items(cellIdentifier: CarDetailsCell.identifier,
                                          cellType: CarDetailsCell.self)) { index, element, cell in
             cell.carAttribute = element
-        }
+            }
+            .disposed(by: self.disposeBag)
     }
     
 }

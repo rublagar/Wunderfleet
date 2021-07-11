@@ -26,13 +26,20 @@ end
 target 'Wunderfleet' do
   # Comment the next line if you don't want to use dynamic frameworks
   dependency_pods
+  
 end
 
 # Tests
 
 target 'WunderfleetTests' do
   inherit! :search_paths
-  # Pods for testing
+  
+  dependency_pods
+  
+  # Reactive Tests
+  pod 'RxTest'
+  pod 'RxBlocking'
+  
 end
 
 target 'WunderfleetUITests' do
