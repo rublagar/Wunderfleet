@@ -33,6 +33,8 @@ Rent a car using Wunderfleet:
 - Clone or download the project.
 - Pod install dependecies with CocoaPods.
 - Run `Wunderfleet.xcworkspace` in Wunderfleet App folder.
+- Remember to select `Wunderfleet` target to Run the app.
+- Mock API data using `MockAPI()` in `AppDelegate`. Uncomment `let apiService = MockAPI()` and comment `let apiService = API()` code.
 
 
 ### **Screenshots**
