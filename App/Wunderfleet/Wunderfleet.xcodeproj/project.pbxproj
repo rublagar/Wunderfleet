@@ -28,6 +28,12 @@
 		96CE263F269AC28B00F9CF9F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE263E269AC28B00F9CF9F /* BaseViewModel.swift */; };
 		96CE2641269AC29B00F9CF9F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2640269AC29B00F9CF9F /* BaseViewController.swift */; };
 		96CE2643269AC2B700F9CF9F /* CarDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2642269AC2B700F9CF9F /* CarDetailViewModel.swift */; };
+		96CE2645269AC3E200F9CF9F /* CallError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2644269AC3E200F9CF9F /* CallError.swift */; };
+		96CE2647269AC3ED00F9CF9F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2646269AC3ED00F9CF9F /* Result.swift */; };
+		96CE2649269AC3FD00F9CF9F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2648269AC3FD00F9CF9F /* Router.swift */; };
+		96CE264B269AC40A00F9CF9F /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE264A269AC40A00F9CF9F /* Manager.swift */; };
+		96CE264D269AC41500F9CF9F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE264C269AC41500F9CF9F /* API.swift */; };
+		96CE264F269AC48500F9CF9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE264E269AC48500F9CF9F /* Constants.swift */; };
 		E1ECF5CB2E882D2DA15EE591 /* Pods_Wunderfleet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +86,12 @@
 		96CE263E269AC28B00F9CF9F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		96CE2640269AC29B00F9CF9F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		96CE2642269AC2B700F9CF9F /* CarDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewModel.swift; sourceTree = "<group>"; };
+		96CE2644269AC3E200F9CF9F /* CallError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallError.swift; sourceTree = "<group>"; };
+		96CE2646269AC3ED00F9CF9F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		96CE2648269AC3FD00F9CF9F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		96CE264A269AC40A00F9CF9F /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		96CE264C269AC41500F9CF9F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		96CE264E269AC48500F9CF9F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C75B90AAE58223B01EC76EA2 /* Pods-WunderfleetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetUITests.debug.xcconfig"; path = "Target Support Files/Pods-WunderfleetUITests/Pods-WunderfleetUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wunderfleet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WunderfleetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +184,7 @@
 		96CE261A269ABF4E00F9CF9F /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				96CE264E269AC48500F9CF9F /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -214,6 +227,11 @@
 		96CE261F269ABF8100F9CF9F /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				96CE264C269AC41500F9CF9F /* API.swift */,
+				96CE264A269AC40A00F9CF9F /* Manager.swift */,
+				96CE2648269AC3FD00F9CF9F /* Router.swift */,
+				96CE2646269AC3ED00F9CF9F /* Result.swift */,
+				96CE2644269AC3E200F9CF9F /* CallError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -551,18 +569,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				96CE262D269AC18000F9CF9F /* AppCoordinator.swift in Sources */,
+				96CE264F269AC48500F9CF9F /* Constants.swift in Sources */,
 				96CE263F269AC28B00F9CF9F /* BaseViewModel.swift in Sources */,
 				96CE2643269AC2B700F9CF9F /* CarDetailViewModel.swift in Sources */,
 				96CE263D269AC26E00F9CF9F /* MapViewModel.swift in Sources */,
 				96CE2633269AC1C800F9CF9F /* CarDetailCoordinator.swift in Sources */,
 				96CE2635269AC1FE00F9CF9F /* MapCoordinator.swift in Sources */,
+				96CE2647269AC3ED00F9CF9F /* Result.swift in Sources */,
 				96CE2641269AC29B00F9CF9F /* BaseViewController.swift in Sources */,
+				96CE2649269AC3FD00F9CF9F /* Router.swift in Sources */,
 				96CE262B269AC16600F9CF9F /* Coordinator.swift in Sources */,
 				96CE2631269AC1A600F9CF9F /* Reservation.swift in Sources */,
 				96CE2639269AC23200F9CF9F /* CarDetailViewController.swift in Sources */,
+				96CE2645269AC3E200F9CF9F /* CallError.swift in Sources */,
 				96CE262F269AC19D00F9CF9F /* Car.swift in Sources */,
 				96CE25EB269ABBDA00F9CF9F /* AppDelegate.swift in Sources */,
 				96CE2637269AC22400F9CF9F /* MapViewController.swift in Sources */,
+				96CE264D269AC41500F9CF9F /* API.swift in Sources */,
+				96CE264B269AC40A00F9CF9F /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
