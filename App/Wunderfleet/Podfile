@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+def dependency_pods
+
+  use_frameworks!
+
+  # Network
+  pod 'Alamofire'
+  
+  # Reactive
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxAlamofire'
+  
+  #  Images
+  pod 'Kingfisher'
+  
+  # Progress Loader
+  pod 'PKHUD'
+
+end
+
+# Main App
+
+target 'Wunderfleet' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  dependency_pods
+end
+
+# Tests
+
+target 'WunderfleetTests' do
+  inherit! :search_paths
+  # Pods for testing
+end
+
+target 'WunderfleetUITests' do
+  # Pods for testing
+end
