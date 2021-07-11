@@ -10,11 +10,24 @@
 		38CC66A57F5842FC07F02E15 /* libPods-WunderfleetUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA2BA215B5291BA6C1CEE58 /* libPods-WunderfleetUITests.a */; };
 		63B4554067BEBA3B80FC5FCB /* libPods-WunderfleetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */; };
 		96CE25EB269ABBDA00F9CF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */; };
-		96CE25F2269ABBDA00F9CF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F0269ABBDA00F9CF9F /* Main.storyboard */; };
+		96CE25F2269ABBDA00F9CF9F /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F0269ABBDA00F9CF9F /* Map.storyboard */; };
 		96CE25F4269ABBDB00F9CF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */; };
 		96CE25F7269ABBDB00F9CF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F5269ABBDB00F9CF9F /* LaunchScreen.storyboard */; };
 		96CE2602269ABBDC00F9CF9F /* WunderfleetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2601269ABBDC00F9CF9F /* WunderfleetTests.swift */; };
 		96CE260D269ABBDC00F9CF9F /* WunderfleetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE260C269ABBDC00F9CF9F /* WunderfleetUITests.swift */; };
+		96CE262B269AC16600F9CF9F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE262A269AC16600F9CF9F /* Coordinator.swift */; };
+		96CE262D269AC18000F9CF9F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE262C269AC18000F9CF9F /* AppCoordinator.swift */; };
+		96CE262F269AC19D00F9CF9F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE262E269AC19D00F9CF9F /* Car.swift */; };
+		96CE2631269AC1A600F9CF9F /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2630269AC1A600F9CF9F /* Reservation.swift */; };
+		96CE2633269AC1C800F9CF9F /* CarDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2632269AC1C800F9CF9F /* CarDetailCoordinator.swift */; };
+		96CE2635269AC1FE00F9CF9F /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2634269AC1FE00F9CF9F /* MapCoordinator.swift */; };
+		96CE2637269AC22400F9CF9F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2636269AC22400F9CF9F /* MapViewController.swift */; };
+		96CE2639269AC23200F9CF9F /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2638269AC23200F9CF9F /* CarDetailViewController.swift */; };
+		96CE263B269AC25D00F9CF9F /* CarDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE263A269AC25D00F9CF9F /* CarDetail.storyboard */; };
+		96CE263D269AC26E00F9CF9F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE263C269AC26E00F9CF9F /* MapViewModel.swift */; };
+		96CE263F269AC28B00F9CF9F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE263E269AC28B00F9CF9F /* BaseViewModel.swift */; };
+		96CE2641269AC29B00F9CF9F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2640269AC29B00F9CF9F /* BaseViewController.swift */; };
+		96CE2643269AC2B700F9CF9F /* CarDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2642269AC2B700F9CF9F /* CarDetailViewModel.swift */; };
 		E1ECF5CB2E882D2DA15EE591 /* Pods_Wunderfleet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +57,7 @@
 		7541B5DB4A17AFCD79A6B0AF /* Pods-WunderfleetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetUITests.release.xcconfig"; path = "Target Support Files/Pods-WunderfleetUITests/Pods-WunderfleetUITests.release.xcconfig"; sourceTree = "<group>"; };
 		96CE25E7269ABBDA00F9CF9F /* Wunderfleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wunderfleet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96CE25F1269ABBDA00F9CF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96CE25F1269ABBDA00F9CF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Map.storyboard; sourceTree = "<group>"; };
 		96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96CE25F6269ABBDB00F9CF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96CE25F8269ABBDB00F9CF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +67,19 @@
 		96CE2608269ABBDC00F9CF9F /* WunderfleetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WunderfleetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CE260C269ABBDC00F9CF9F /* WunderfleetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WunderfleetUITests.swift; sourceTree = "<group>"; };
 		96CE260E269ABBDC00F9CF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CE262A269AC16600F9CF9F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		96CE262C269AC18000F9CF9F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		96CE262E269AC19D00F9CF9F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		96CE2630269AC1A600F9CF9F /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		96CE2632269AC1C800F9CF9F /* CarDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailCoordinator.swift; sourceTree = "<group>"; };
+		96CE2634269AC1FE00F9CF9F /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		96CE2636269AC22400F9CF9F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		96CE2638269AC23200F9CF9F /* CarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
+		96CE263A269AC25D00F9CF9F /* CarDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarDetail.storyboard; sourceTree = "<group>"; };
+		96CE263C269AC26E00F9CF9F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		96CE263E269AC28B00F9CF9F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		96CE2640269AC29B00F9CF9F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		96CE2642269AC2B700F9CF9F /* CarDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewModel.swift; sourceTree = "<group>"; };
 		C75B90AAE58223B01EC76EA2 /* Pods-WunderfleetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetUITests.debug.xcconfig"; path = "Target Support Files/Pods-WunderfleetUITests/Pods-WunderfleetUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wunderfleet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WunderfleetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +179,8 @@
 		96CE261B269ABF5700F9CF9F /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				96CE262A269AC16600F9CF9F /* Coordinator.swift */,
+				96CE262C269AC18000F9CF9F /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -167,6 +195,8 @@
 		96CE261D269ABF6900F9CF9F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				96CE262E269AC19D00F9CF9F /* Car.swift */,
+				96CE2630269AC1A600F9CF9F /* Reservation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,7 +221,6 @@
 		96CE2620269ABF8A00F9CF9F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				96CE25F0269ABBDA00F9CF9F /* Main.storyboard */,
 				96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */,
 				96CE25F5269ABBDB00F9CF9F /* LaunchScreen.storyboard */,
 			);
@@ -221,6 +250,8 @@
 		96CE2623269ABFE600F9CF9F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				96CE263E269AC28B00F9CF9F /* BaseViewModel.swift */,
+				96CE2640269AC29B00F9CF9F /* BaseViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -228,6 +259,7 @@
 		96CE2624269ABFF800F9CF9F /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				96CE2634269AC1FE00F9CF9F /* MapCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -235,6 +267,8 @@
 		96CE2625269ABFFE00F9CF9F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				96CE2636269AC22400F9CF9F /* MapViewController.swift */,
+				96CE25F0269ABBDA00F9CF9F /* Map.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +276,7 @@
 		96CE2626269AC00300F9CF9F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				96CE263C269AC26E00F9CF9F /* MapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -249,6 +284,7 @@
 		96CE2627269AC00C00F9CF9F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				96CE2642269AC2B700F9CF9F /* CarDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -256,6 +292,8 @@
 		96CE2628269AC01100F9CF9F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				96CE2638269AC23200F9CF9F /* CarDetailViewController.swift */,
+				96CE263A269AC25D00F9CF9F /* CarDetail.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +301,7 @@
 		96CE2629269AC01500F9CF9F /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				96CE2632269AC1C800F9CF9F /* CarDetailCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -397,9 +436,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CE263B269AC25D00F9CF9F /* CarDetail.storyboard in Resources */,
 				96CE25F7269ABBDB00F9CF9F /* LaunchScreen.storyboard in Resources */,
 				96CE25F4269ABBDB00F9CF9F /* Assets.xcassets in Resources */,
-				96CE25F2269ABBDA00F9CF9F /* Main.storyboard in Resources */,
+				96CE25F2269ABBDA00F9CF9F /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +550,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CE262D269AC18000F9CF9F /* AppCoordinator.swift in Sources */,
+				96CE263F269AC28B00F9CF9F /* BaseViewModel.swift in Sources */,
+				96CE2643269AC2B700F9CF9F /* CarDetailViewModel.swift in Sources */,
+				96CE263D269AC26E00F9CF9F /* MapViewModel.swift in Sources */,
+				96CE2633269AC1C800F9CF9F /* CarDetailCoordinator.swift in Sources */,
+				96CE2635269AC1FE00F9CF9F /* MapCoordinator.swift in Sources */,
+				96CE2641269AC29B00F9CF9F /* BaseViewController.swift in Sources */,
+				96CE262B269AC16600F9CF9F /* Coordinator.swift in Sources */,
+				96CE2631269AC1A600F9CF9F /* Reservation.swift in Sources */,
+				96CE2639269AC23200F9CF9F /* CarDetailViewController.swift in Sources */,
+				96CE262F269AC19D00F9CF9F /* Car.swift in Sources */,
 				96CE25EB269ABBDA00F9CF9F /* AppDelegate.swift in Sources */,
+				96CE2637269AC22400F9CF9F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,12 +598,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		96CE25F0269ABBDA00F9CF9F /* Main.storyboard */ = {
+		96CE25F0269ABBDA00F9CF9F /* Map.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				96CE25F1269ABBDA00F9CF9F /* Base */,
 			);
-			name = Main.storyboard;
+			name = Map.storyboard;
 			sourceTree = "<group>";
 		};
 		96CE25F5269ABBDB00F9CF9F /* LaunchScreen.storyboard */ = {
