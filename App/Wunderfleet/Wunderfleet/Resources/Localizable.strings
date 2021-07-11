@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Wunderfleet
+
+  Created by Ruben Blanco on 11/7/21.
+  
+*/
+
+// MARK: Map View
+"MAP_VIEW_TITLE" = "Wunderfleet";
+
+// MARK: Errors
+"GENERIC_ERROR" = "Generic Error";
+"SERIALIZATION_ERROR" = "Serialization Error";
+"UNKNOWN_ERROR" = "Unknown Error";

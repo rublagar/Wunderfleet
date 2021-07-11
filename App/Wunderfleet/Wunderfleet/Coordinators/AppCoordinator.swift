@@ -7,6 +7,22 @@
 
 import Foundation
 
+import RxSwift
+
 final class AppCoordinator: Coordinator {
 
+    private let window: UIWindow
+
+    init(window: UIWindow) {
+        self.window = window
+    }
+
+    // MARK: Start Coordinator
+    
+    override func start() {
+        let mapCoordinator = MapCoordinator(window: window)
+        self.addCoordinator(mapCoordinator)
+        mapCoordinator.start()
+    }
+    
 }

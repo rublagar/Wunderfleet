@@ -33,11 +33,11 @@ final class CallError {
         case .success:
             self.init()
         case .failed:
-            self.init(message: NSLocalizedString("Generic Error", comment: ""))
+            self.init(message: "GENERIC_ERROR".localized)
         case .serialization(let error):
-            self.init(message: error ?? NSLocalizedString("Serialization Error", comment: ""))
+            self.init(message: error ?? "SERIALIZATION_ERROR".localized)
         case .unknown:
-            self.init(message: NSLocalizedString("Unknown error", comment: ""))
+            self.init(message: "UNKNOWN_ERROR".localized)
         }
     }
     

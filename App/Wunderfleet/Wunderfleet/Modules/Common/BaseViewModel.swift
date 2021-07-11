@@ -7,6 +7,11 @@
 
 import Foundation
 
+import RxSwift
+
 class BaseViewModel {
+    
+    let disposeBag = DisposeBag()
+    let alertDialog = PublishSubject<(String,String)>()
     
 }
