@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		38CC66A57F5842FC07F02E15 /* libPods-WunderfleetUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA2BA215B5291BA6C1CEE58 /* libPods-WunderfleetUITests.a */; };
 		63B4554067BEBA3B80FC5FCB /* libPods-WunderfleetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */; };
 		96CE25EB269ABBDA00F9CF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */; };
-		96CE25EF269ABBDA00F9CF9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE25EE269ABBDA00F9CF9F /* ViewController.swift */; };
 		96CE25F2269ABBDA00F9CF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F0269ABBDA00F9CF9F /* Main.storyboard */; };
 		96CE25F4269ABBDB00F9CF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */; };
 		96CE25F7269ABBDB00F9CF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F5269ABBDB00F9CF9F /* LaunchScreen.storyboard */; };
@@ -45,7 +44,6 @@
 		7541B5DB4A17AFCD79A6B0AF /* Pods-WunderfleetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetUITests.release.xcconfig"; path = "Target Support Files/Pods-WunderfleetUITests/Pods-WunderfleetUITests.release.xcconfig"; sourceTree = "<group>"; };
 		96CE25E7269ABBDA00F9CF9F /* Wunderfleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wunderfleet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96CE25EE269ABBDA00F9CF9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96CE25F1269ABBDA00F9CF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96CE25F6269ABBDB00F9CF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,10 +113,13 @@
 			isa = PBXGroup;
 			children = (
 				96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */,
-				96CE25EE269ABBDA00F9CF9F /* ViewController.swift */,
-				96CE25F0269ABBDA00F9CF9F /* Main.storyboard */,
-				96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */,
-				96CE25F5269ABBDB00F9CF9F /* LaunchScreen.storyboard */,
+				96CE261A269ABF4E00F9CF9F /* Constants */,
+				96CE261B269ABF5700F9CF9F /* Coordinators */,
+				96CE261C269ABF6100F9CF9F /* Extensions */,
+				96CE261D269ABF6900F9CF9F /* Models */,
+				96CE261E269ABF7400F9CF9F /* Modules */,
+				96CE261F269ABF8100F9CF9F /* Networking */,
+				96CE2620269ABF8A00F9CF9F /* Resources */,
 				96CE25F8269ABBDB00F9CF9F /* Info.plist */,
 			);
 			path = Wunderfleet;
@@ -142,6 +143,130 @@
 			path = WunderfleetUITests;
 			sourceTree = "<group>";
 		};
+		96CE261A269ABF4E00F9CF9F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		96CE261B269ABF5700F9CF9F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		96CE261C269ABF6100F9CF9F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96CE261D269ABF6900F9CF9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		96CE261E269ABF7400F9CF9F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				96CE2622269ABFE100F9CF9F /* Map */,
+				96CE2621269ABFD900F9CF9F /* CarDetail */,
+				96CE2623269ABFE600F9CF9F /* Common */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		96CE261F269ABF8100F9CF9F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		96CE2620269ABF8A00F9CF9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96CE25F0269ABBDA00F9CF9F /* Main.storyboard */,
+				96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */,
+				96CE25F5269ABBDB00F9CF9F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		96CE2621269ABFD900F9CF9F /* CarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				96CE2629269AC01500F9CF9F /* Coordinator */,
+				96CE2628269AC01100F9CF9F /* View */,
+				96CE2627269AC00C00F9CF9F /* ViewModel */,
+			);
+			path = CarDetail;
+			sourceTree = "<group>";
+		};
+		96CE2622269ABFE100F9CF9F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				96CE2624269ABFF800F9CF9F /* Coordinator */,
+				96CE2625269ABFFE00F9CF9F /* View */,
+				96CE2626269AC00300F9CF9F /* ViewModel */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		96CE2623269ABFE600F9CF9F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		96CE2624269ABFF800F9CF9F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		96CE2625269ABFFE00F9CF9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96CE2626269AC00300F9CF9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96CE2627269AC00C00F9CF9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96CE2628269AC01100F9CF9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96CE2629269AC01500F9CF9F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		B935262077447EFE0DAFFF43 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +277,6 @@
 				C75B90AAE58223B01EC76EA2 /* Pods-WunderfleetUITests.debug.xcconfig */,
 				7541B5DB4A17AFCD79A6B0AF /* Pods-WunderfleetUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -386,7 +510,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96CE25EF269ABBDA00F9CF9F /* ViewController.swift in Sources */,
 				96CE25EB269ABBDA00F9CF9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
