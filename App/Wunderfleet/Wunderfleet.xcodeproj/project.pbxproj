@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38CC66A57F5842FC07F02E15 /* libPods-WunderfleetUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA2BA215B5291BA6C1CEE58 /* libPods-WunderfleetUITests.a */; };
+		63B4554067BEBA3B80FC5FCB /* libPods-WunderfleetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */; };
+		96CE25EB269ABBDA00F9CF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */; };
+		96CE25F2269ABBDA00F9CF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F0269ABBDA00F9CF9F /* Main.storyboard */; };
+		96CE25F4269ABBDB00F9CF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */; };
+		96CE25F7269ABBDB00F9CF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE25F5269ABBDB00F9CF9F /* LaunchScreen.storyboard */; };
+		96CE2602269ABBDC00F9CF9F /* WunderfleetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE2601269ABBDC00F9CF9F /* WunderfleetTests.swift */; };
+		96CE260D269ABBDC00F9CF9F /* WunderfleetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE260C269ABBDC00F9CF9F /* WunderfleetUITests.swift */; };
+		E1ECF5CB2E882D2DA15EE591 /* Pods_Wunderfleet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96CE25FE269ABBDC00F9CF9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96CE25DF269ABBDA00F9CF9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96CE25E6269ABBDA00F9CF9F;
+			remoteInfo = Wunderfleet;
+		};
+		96CE2609269ABBDC00F9CF9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96CE25DF269ABBDA00F9CF9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96CE25E6269ABBDA00F9CF9F;
+			remoteInfo = Wunderfleet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04EF9CD2F39254507292F623 /* Pods-WunderfleetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetTests.debug.xcconfig"; path = "Target Support Files/Pods-WunderfleetTests/Pods-WunderfleetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0AA2BA215B5291BA6C1CEE58 /* libPods-WunderfleetUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WunderfleetUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC45024E33783DDC8CF39FF /* Pods-WunderfleetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetTests.release.xcconfig"; path = "Target Support Files/Pods-WunderfleetTests/Pods-WunderfleetTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CD150B525C7BC2DCAF17AF6 /* Pods-Wunderfleet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wunderfleet.release.xcconfig"; path = "Target Support Files/Pods-Wunderfleet/Pods-Wunderfleet.release.xcconfig"; sourceTree = "<group>"; };
+		3FC6B25CEB8527D15FF5DAB3 /* Pods-Wunderfleet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wunderfleet.debug.xcconfig"; path = "Target Support Files/Pods-Wunderfleet/Pods-Wunderfleet.debug.xcconfig"; sourceTree = "<group>"; };
+		7541B5DB4A17AFCD79A6B0AF /* Pods-WunderfleetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetUITests.release.xcconfig"; path = "Target Support Files/Pods-WunderfleetUITests/Pods-WunderfleetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		96CE25E7269ABBDA00F9CF9F /* Wunderfleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wunderfleet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96CE25F1269ABBDA00F9CF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96CE25F6269ABBDB00F9CF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96CE25F8269ABBDB00F9CF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CE25FD269ABBDC00F9CF9F /* WunderfleetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WunderfleetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CE2601269ABBDC00F9CF9F /* WunderfleetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WunderfleetTests.swift; sourceTree = "<group>"; };
+		96CE2603269ABBDC00F9CF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CE2608269ABBDC00F9CF9F /* WunderfleetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WunderfleetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CE260C269ABBDC00F9CF9F /* WunderfleetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WunderfleetUITests.swift; sourceTree = "<group>"; };
+		96CE260E269ABBDC00F9CF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75B90AAE58223B01EC76EA2 /* Pods-WunderfleetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderfleetUITests.debug.xcconfig"; path = "Target Support Files/Pods-WunderfleetUITests/Pods-WunderfleetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wunderfleet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WunderfleetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96CE25E4269ABBDA00F9CF9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1ECF5CB2E882D2DA15EE591 /* Pods_Wunderfleet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CE25FA269ABBDC00F9CF9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B4554067BEBA3B80FC5FCB /* libPods-WunderfleetTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CE2605269ABBDC00F9CF9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CC66A57F5842FC07F02E15 /* libPods-WunderfleetUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96CE25DE269ABBDA00F9CF9F = {
+			isa = PBXGroup;
+			children = (
+				96CE25E9269ABBDA00F9CF9F /* Wunderfleet */,
+				96CE2600269ABBDC00F9CF9F /* WunderfleetTests */,
+				96CE260B269ABBDC00F9CF9F /* WunderfleetUITests */,
+				96CE25E8269ABBDA00F9CF9F /* Products */,
+				B935262077447EFE0DAFFF43 /* Pods */,
+				F68CE4ECD383370DE1B3E1B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96CE25E8269ABBDA00F9CF9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96CE25E7269ABBDA00F9CF9F /* Wunderfleet.app */,
+				96CE25FD269ABBDC00F9CF9F /* WunderfleetTests.xctest */,
+				96CE2608269ABBDC00F9CF9F /* WunderfleetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96CE25E9269ABBDA00F9CF9F /* Wunderfleet */ = {
+			isa = PBXGroup;
+			children = (
+				96CE25EA269ABBDA00F9CF9F /* AppDelegate.swift */,
+				96CE261A269ABF4E00F9CF9F /* Constants */,
+				96CE261B269ABF5700F9CF9F /* Coordinators */,
+				96CE261C269ABF6100F9CF9F /* Extensions */,
+				96CE261D269ABF6900F9CF9F /* Models */,
+				96CE261E269ABF7400F9CF9F /* Modules */,
+				96CE261F269ABF8100F9CF9F /* Networking */,
+				96CE2620269ABF8A00F9CF9F /* Resources */,
+				96CE25F8269ABBDB00F9CF9F /* Info.plist */,
+			);
+			path = Wunderfleet;
+			sourceTree = "<group>";
+		};
+		96CE2600269ABBDC00F9CF9F /* WunderfleetTests */ = {
+			isa = PBXGroup;
+			children = (
+				96CE2601269ABBDC00F9CF9F /* WunderfleetTests.swift */,
+				96CE2603269ABBDC00F9CF9F /* Info.plist */,
+			);
+			path = WunderfleetTests;
+			sourceTree = "<group>";
+		};
+		96CE260B269ABBDC00F9CF9F /* WunderfleetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96CE260C269ABBDC00F9CF9F /* WunderfleetUITests.swift */,
+				96CE260E269ABBDC00F9CF9F /* Info.plist */,
+			);
+			path = WunderfleetUITests;
+			sourceTree = "<group>";
+		};
+		96CE261A269ABF4E00F9CF9F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		96CE261B269ABF5700F9CF9F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		96CE261C269ABF6100F9CF9F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96CE261D269ABF6900F9CF9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		96CE261E269ABF7400F9CF9F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				96CE2622269ABFE100F9CF9F /* Map */,
+				96CE2621269ABFD900F9CF9F /* CarDetail */,
+				96CE2623269ABFE600F9CF9F /* Common */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		96CE261F269ABF8100F9CF9F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		96CE2620269ABF8A00F9CF9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96CE25F0269ABBDA00F9CF9F /* Main.storyboard */,
+				96CE25F3269ABBDB00F9CF9F /* Assets.xcassets */,
+				96CE25F5269ABBDB00F9CF9F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		96CE2621269ABFD900F9CF9F /* CarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				96CE2629269AC01500F9CF9F /* Coordinator */,
+				96CE2628269AC01100F9CF9F /* View */,
+				96CE2627269AC00C00F9CF9F /* ViewModel */,
+			);
+			path = CarDetail;
+			sourceTree = "<group>";
+		};
+		96CE2622269ABFE100F9CF9F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				96CE2624269ABFF800F9CF9F /* Coordinator */,
+				96CE2625269ABFFE00F9CF9F /* View */,
+				96CE2626269AC00300F9CF9F /* ViewModel */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		96CE2623269ABFE600F9CF9F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		96CE2624269ABFF800F9CF9F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		96CE2625269ABFFE00F9CF9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96CE2626269AC00300F9CF9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96CE2627269AC00C00F9CF9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96CE2628269AC01100F9CF9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96CE2629269AC01500F9CF9F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B935262077447EFE0DAFFF43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FC6B25CEB8527D15FF5DAB3 /* Pods-Wunderfleet.debug.xcconfig */,
+				3CD150B525C7BC2DCAF17AF6 /* Pods-Wunderfleet.release.xcconfig */,
+				04EF9CD2F39254507292F623 /* Pods-WunderfleetTests.debug.xcconfig */,
+				0CC45024E33783DDC8CF39FF /* Pods-WunderfleetTests.release.xcconfig */,
+				C75B90AAE58223B01EC76EA2 /* Pods-WunderfleetUITests.debug.xcconfig */,
+				7541B5DB4A17AFCD79A6B0AF /* Pods-WunderfleetUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F68CE4ECD383370DE1B3E1B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDC75BDC2F54D62B57A839B7 /* Pods_Wunderfleet.framework */,
+				FCF1AE49C0DC81CF8551E832 /* libPods-WunderfleetTests.a */,
+				0AA2BA215B5291BA6C1CEE58 /* libPods-WunderfleetUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96CE25E6269ABBDA00F9CF9F /* Wunderfleet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CE2611269ABBDC00F9CF9F /* Build configuration list for PBXNativeTarget "Wunderfleet" */;
+			buildPhases = (
+				BB4A6FE0D6B1EED7A4EDA8D5 /* [CP] Check Pods Manifest.lock */,
+				96CE25E3269ABBDA00F9CF9F /* Sources */,
+				96CE25E4269ABBDA00F9CF9F /* Frameworks */,
+				96CE25E5269ABBDA00F9CF9F /* Resources */,
+				8FF9C8ECAE9F98CF79A993B3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wunderfleet;
+			productName = Wunderfleet;
+			productReference = 96CE25E7269ABBDA00F9CF9F /* Wunderfleet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96CE25FC269ABBDC00F9CF9F /* WunderfleetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CE2614269ABBDC00F9CF9F /* Build configuration list for PBXNativeTarget "WunderfleetTests" */;
+			buildPhases = (
+				DCB5102F95E6BAEF1DDAB695 /* [CP] Check Pods Manifest.lock */,
+				96CE25F9269ABBDC00F9CF9F /* Sources */,
+				96CE25FA269ABBDC00F9CF9F /* Frameworks */,
+				96CE25FB269ABBDC00F9CF9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96CE25FF269ABBDC00F9CF9F /* PBXTargetDependency */,
+			);
+			name = WunderfleetTests;
+			productName = WunderfleetTests;
+			productReference = 96CE25FD269ABBDC00F9CF9F /* WunderfleetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96CE2607269ABBDC00F9CF9F /* WunderfleetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CE2617269ABBDC00F9CF9F /* Build configuration list for PBXNativeTarget "WunderfleetUITests" */;
+			buildPhases = (
+				D5F7C30F89ACF930D99C0F34 /* [CP] Check Pods Manifest.lock */,
+				96CE2604269ABBDC00F9CF9F /* Sources */,
+				96CE2605269ABBDC00F9CF9F /* Frameworks */,
+				96CE2606269ABBDC00F9CF9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96CE260A269ABBDC00F9CF9F /* PBXTargetDependency */,
+			);
+			name = WunderfleetUITests;
+			productName = WunderfleetUITests;
+			productReference = 96CE2608269ABBDC00F9CF9F /* WunderfleetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96CE25DF269ABBDA00F9CF9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					96CE25E6269ABBDA00F9CF9F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					96CE25FC269ABBDC00F9CF9F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 96CE25E6269ABBDA00F9CF9F;
+					};
+					96CE2607269ABBDC00F9CF9F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 96CE25E6269ABBDA00F9CF9F;
+					};
+				};
+			};
+			buildConfigurationList = 96CE25E2269ABBDA00F9CF9F /* Build configuration list for PBXProject "Wunderfleet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96CE25DE269ABBDA00F9CF9F;
+			productRefGroup = 96CE25E8269ABBDA00F9CF9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96CE25E6269ABBDA00F9CF9F /* Wunderfleet */,
+				96CE25FC269ABBDC00F9CF9F /* WunderfleetTests */,
+				96CE2607269ABBDC00F9CF9F /* WunderfleetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96CE25E5269ABBDA00F9CF9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CE25F7269ABBDB00F9CF9F /* LaunchScreen.storyboard in Resources */,
+				96CE25F4269ABBDB00F9CF9F /* Assets.xcassets in Resources */,
+				96CE25F2269ABBDA00F9CF9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CE25FB269ABBDC00F9CF9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CE2606269ABBDC00F9CF9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FF9C8ECAE9F98CF79A993B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wunderfleet/Pods-Wunderfleet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wunderfleet/Pods-Wunderfleet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wunderfleet/Pods-Wunderfleet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB4A6FE0D6B1EED7A4EDA8D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wunderfleet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5F7C30F89ACF930D99C0F34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WunderfleetUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCB5102F95E6BAEF1DDAB695 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WunderfleetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96CE25E3269ABBDA00F9CF9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CE25EB269ABBDA00F9CF9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CE25F9269ABBDC00F9CF9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CE2602269ABBDC00F9CF9F /* WunderfleetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CE2604269ABBDC00F9CF9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CE260D269ABBDC00F9CF9F /* WunderfleetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96CE25FF269ABBDC00F9CF9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96CE25E6269ABBDA00F9CF9F /* Wunderfleet */;
+			targetProxy = 96CE25FE269ABBDC00F9CF9F /* PBXContainerItemProxy */;
+		};
+		96CE260A269ABBDC00F9CF9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96CE25E6269ABBDA00F9CF9F /* Wunderfleet */;
+			targetProxy = 96CE2609269ABBDC00F9CF9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96CE25F0269ABBDA00F9CF9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96CE25F1269ABBDA00F9CF9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96CE25F5269ABBDB00F9CF9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96CE25F6269ABBDB00F9CF9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96CE260F269ABBDC00F9CF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96CE2610269ABBDC00F9CF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96CE2612269ABBDC00F9CF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC6B25CEB8527D15FF5DAB3 /* Pods-Wunderfleet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wunderfleet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wundermobility.wunderfleet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96CE2613269ABBDC00F9CF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD150B525C7BC2DCAF17AF6 /* Pods-Wunderfleet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wunderfleet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wundermobility.wunderfleet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96CE2615269ABBDC00F9CF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04EF9CD2F39254507292F623 /* Pods-WunderfleetTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WunderfleetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wundermobility.WunderfleetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wunderfleet.app/Wunderfleet";
+			};
+			name = Debug;
+		};
+		96CE2616269ABBDC00F9CF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CC45024E33783DDC8CF39FF /* Pods-WunderfleetTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WunderfleetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wundermobility.WunderfleetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wunderfleet.app/Wunderfleet";
+			};
+			name = Release;
+		};
+		96CE2618269ABBDC00F9CF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75B90AAE58223B01EC76EA2 /* Pods-WunderfleetUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WunderfleetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wundermobility.WunderfleetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wunderfleet;
+			};
+			name = Debug;
+		};
+		96CE2619269ABBDC00F9CF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7541B5DB4A17AFCD79A6B0AF /* Pods-WunderfleetUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WunderfleetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wundermobility.WunderfleetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wunderfleet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96CE25E2269ABBDA00F9CF9F /* Build configuration list for PBXProject "Wunderfleet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CE260F269ABBDC00F9CF9F /* Debug */,
+				96CE2610269ABBDC00F9CF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CE2611269ABBDC00F9CF9F /* Build configuration list for PBXNativeTarget "Wunderfleet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CE2612269ABBDC00F9CF9F /* Debug */,
+				96CE2613269ABBDC00F9CF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CE2614269ABBDC00F9CF9F /* Build configuration list for PBXNativeTarget "WunderfleetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CE2615269ABBDC00F9CF9F /* Debug */,
+				96CE2616269ABBDC00F9CF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CE2617269ABBDC00F9CF9F /* Build configuration list for PBXNativeTarget "WunderfleetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CE2618269ABBDC00F9CF9F /* Debug */,
+				96CE2619269ABBDC00F9CF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96CE25DF269ABBDA00F9CF9F /* Project object */;
+}
